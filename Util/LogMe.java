@@ -1,5 +1,3 @@
-package me.illusion.hyluminamines.Util;
-
 public class LogMe {
     private static final String consoleWatermark = "[+] HyluminaMines Log - ";
 
