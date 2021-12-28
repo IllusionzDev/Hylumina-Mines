@@ -1,39 +1,4 @@
-package me.illusion.hyluminamines.Util.WorldEdit;
-
-import com.google.common.collect.Maps;
-import com.sk89q.worldedit.EditSession;
-import com.sk89q.worldedit.IncompleteRegionException;
-import com.sk89q.worldedit.MaxChangedBlocksException;
-import com.sk89q.worldedit.bukkit.BukkitAdapter;
-import com.sk89q.worldedit.bukkit.BukkitPlayer;
-import com.sk89q.worldedit.bukkit.EditSessionBlockChangeDelegate;
-import com.sk89q.worldedit.event.extent.EditSessionEvent;
-import com.sk89q.worldedit.function.pattern.Pattern;
-import com.sk89q.worldedit.function.pattern.RandomPattern;
-import com.sk89q.worldedit.math.BlockVector3;
-import com.sk89q.worldedit.regions.CuboidRegion;
-import com.sk89q.worldedit.regions.Region;
-import com.sk89q.worldedit.regions.selector.CuboidRegionSelector;
-import com.sk89q.worldedit.world.World;
-import com.sk89q.worldedit.world.block.BaseBlock;
-import com.sk89q.worldedit.world.block.BlockState;
-import com.sk89q.worldedit.world.block.BlockTypes;
-import me.illusion.hyluminamines.Main;
-import me.illusion.hyluminamines.Util.LogMe;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
-import org.bukkit.util.BlockVector;
-import org.bukkit.util.Vector;
-
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 public class Area {
-    //private static Map<String, CuboidRegion> areas = Maps.newHashMap();
-
     private static Map<String, String> areaWorlds = Maps.newHashMap();
     private static Map<String, String> areaFirstPositions = Maps.newHashMap();
     private static Map<String, String> areaSecondPositions = Maps.newHashMap();
@@ -63,10 +28,6 @@ public class Area {
         this.ply = ply;
         this.worldName = worldName;
     }
-
-    /*public static Map<String, CuboidRegion> GetAreas() {
-        return areas;
-    }*/
 
     public static Map<String, String> GetAreaWorlds() {
         return areaWorlds;
