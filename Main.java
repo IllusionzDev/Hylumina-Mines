@@ -1,23 +1,3 @@
-package me.illusion.hyluminamines;
-
-import com.sk89q.worldedit.bukkit.WorldEditPlugin;
-import me.illusion.hyluminamines.Commands.Mines;
-import me.illusion.hyluminamines.Util.Config.ConfigStates;
-import me.illusion.hyluminamines.Util.Config.CreateConfig;
-import me.illusion.hyluminamines.Util.LogMe;
-import me.illusion.hyluminamines.Util.WorldEdit.Area;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerCommandPreprocessEvent;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.reflections.Reflections;
-
-import java.lang.reflect.InvocationTargetException;
-import java.util.Objects;
-
 public final class Main extends JavaPlugin {
     private static Main instance = null;
     private WorldEditPlugin worldEdit = (WorldEditPlugin) Bukkit.getPluginManager().getPlugin("WorldEdit");
