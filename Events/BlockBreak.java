@@ -1,24 +1,3 @@
-package me.illusion.hyluminamines.Events;
-
-import com.google.common.collect.Maps;
-import com.sk89q.worldedit.IncompleteRegionException;
-import com.sk89q.worldedit.bukkit.BukkitAdapter;
-import com.sk89q.worldedit.math.BlockVector3;
-import com.sk89q.worldedit.regions.CuboidRegion;
-import com.sk89q.worldedit.regions.selector.CuboidRegionSelector;
-import com.sk89q.worldedit.world.World;
-import me.illusion.hyluminamines.Util.LogMe;
-import me.illusion.hyluminamines.Util.WorldEdit.Area;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
-
-import java.util.Map;
-
 public class BlockBreak implements Listener {
     private Map<String, Integer> areaBlocksBroken = Maps.newHashMap();
 
