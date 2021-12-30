@@ -80,13 +80,13 @@ public class Area {
 
         if (!GetAreaBlocks().containsKey(areaName)) {
             AddBlock(areaName, blockName + ",");
-            new LogMe("Added block '" + blockName + "' to area '" + areaName + ".");
+            new LogMe("Added block '" + blockName + "' to area '" + areaName + ".").Success();
             return true;
         }
 
         String getBlockList = GetAreaBlocks().get(areaName);
         AddBlock(areaName, getBlockList + blockName + ",");
-        new LogMe("Added block '" + blockName + "' to area '" + areaName + ".");
+        new LogMe("Added block '" + blockName + "' to area '" + areaName + ".").Success();
         return true;
     }
 
@@ -109,7 +109,7 @@ public class Area {
         }
 
         RemoveBlock(areaName, blockName + ",");
-        new LogMe("Removed block '" + blockName + "' from area '" + areaName + ".");
+        new LogMe("Removed block '" + blockName + "' from area '" + areaName + ".").Success();
         return true;
     }
 
@@ -142,8 +142,7 @@ public class Area {
 
         CuboidRegion region = new Area(areaName).GetRegion();
         EditSession session = Main.GetInstance().GetWorldEdit().getWorldEdit().newEditSession(region.getWorld());
-        Reset(areaName, region, session);
-        return true;
+        return Reset(areaName, region, session);
     }
 
     public boolean AreaCreated(String areaName) {
